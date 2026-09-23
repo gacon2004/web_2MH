@@ -12,6 +12,9 @@ FILES = [
     ("logo-2mh-icon.png", "logo-2mh-icon.png"),
     ("logo-2mh-badge.png", "logo-2mh-badge.png"),
     ("logo-2mh.png", "logo-2mh.png"),
+    ("hero-work.jpg", "hero-work.jpg"),
+    ("team-collab.jpg", "team-collab.jpg"),
+    ("ui-design.jpg", "ui-design.jpg"),
 ]
 
 def main():
