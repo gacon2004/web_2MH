@@ -3,95 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>2MH GROUP • Hệ Sinh Thái Phần Mềm, Web Bán Hàng & Truyền Thông Số</title>
-  <meta name="description" content="2MH GROUP - Giải pháp công nghệ & truyền thông toàn diện: Hệ thống ERP, Thiết kế Web Bán Hàng & Landing Page chuyên nghiệp, Tự động hóa TMĐT và MCN Affiliate.">
+  <title>2MH GROUP • Hệ Sinh Thái Công Nghệ & Truyền Thông Số Chuẩn Tương Lai</title>
+  <meta name="description" content="2MH GROUP - Tổ hợp giải pháp công nghệ tự động hóa TMĐT, Studio Render Video AI, Phần mềm quản trị và Thiết kế Website bán hàng tối ưu chuyển đổi.">
   <link rel="icon" type="image/png" href="logo-2mh-icon.png">
   <link rel="apple-touch-icon" href="logo-2mh-icon.png">
-  
-  <!-- Modern Typography -->
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
   <style>
     /* ==========================================================================
-       DESIGN SYSTEM: SERENE BLUE & CLEAN MODERN STARTUP AESTHETICS
+       ULTRA-PERFORMANT 60FPS LIQUID GLASS DESIGN SYSTEM
+       • Zero heavy live CSS filters (no filter: blur on huge animated elements)
+       • GPU-accelerated transforms & pre-rendered smooth radial gradients
+       • Clean specular white borders, crisp glassmorphism without CPU/GPU choking
        ========================================================================== */
     :root {
-      /* Brand Identity Colors (Deep Ocean & Serene Blue from 2MH Logo) */
-      --primary: #004580;
-      --primary-dark: #00305a;
-      --primary-light: #0266b5;
-      --primary-sky: #0284c7;
-      --primary-soft: #e0f2fe;
-      --primary-tint: #f0f7ff;
-      --teal-serene: #0d9488;
-      
-      /* Neutral Palette */
-      --bg-body: #f8fafc;
-      --bg-surface: #ffffff;
-      --bg-subtle: #f1f5f9;
-      --border-light: #e2e8f0;
-      --border-focus: #bae6fd;
-      
-      /* Text Colors */
-      --text-heading: #0f172a;
-      --text-body: #475569;
-      --text-muted: #64748b;
-      --text-light: #94a3b8;
-      
-      /* Elevation & Shadows */
-      --shadow-sm: 0 2px 8px rgba(0, 69, 128, 0.04);
-      --shadow-md: 0 10px 25px -5px rgba(0, 69, 128, 0.08), 0 8px 10px -6px rgba(0, 69, 128, 0.04);
-      --shadow-lg: 0 20px 40px -12px rgba(0, 69, 128, 0.12), 0 0 1px rgba(0, 69, 128, 0.1);
-      --shadow-xl: 0 30px 60px -15px rgba(0, 69, 128, 0.18);
-      
+      --bg-base: #f8fafc;
+      --brand-blue: #0056b3;
+      --brand-deep: #003666;
+      --brand-sky: #0284c7;
+      --brand-cyan: #06b6d4;
+      --brand-violet: #6366f1;
+      --brand-emerald: #10b981;
+
+      /* High Performance Glass Cards (Native hardware accelerated) */
+      --glass-surface: rgba(255, 255, 255, 0.88);
+      --glass-border: rgba(226, 232, 240, 0.95);
+      --glass-shadow: 0 10px 30px -5px rgba(0, 54, 102, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
+      --glass-shadow-hover: 0 20px 45px -10px rgba(0, 86, 179, 0.16), 0 0 1px rgba(0, 86, 179, 0.2);
+
       /* Typography */
-      --font-display: 'Plus Jakarta Sans', 'Be Vietnam Pro', -apple-system, sans-serif;
-      --font-body: 'Be Vietnam Pro', 'Plus Jakarta Sans', -apple-system, sans-serif;
-      --font-script: 'Caveat', cursive;
+      --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --text-main: #0f172a;
+      --text-sub: #475569;
+      --text-muted: #64748b;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html {
       scroll-behavior: smooth;
-      font-family: var(--font-body);
-      background-color: var(--bg-body);
-      color: var(--text-body);
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-display);
       line-height: 1.6;
-      width: 100%;
       overflow-x: hidden;
-      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
     }
     body {
-      background-color: var(--bg-body);
+      background-color: var(--bg-base);
+      /* Static performant ambient gradients - 0% CPU cost */
       background-image: 
-        radial-gradient(at 0% 0%, rgba(2, 132, 199, 0.06) 0px, transparent 50%),
-        radial-gradient(at 100% 0%, rgba(0, 69, 128, 0.05) 0px, transparent 50%),
-        radial-gradient(at 50% 50%, rgba(224, 242, 254, 0.4) 0px, transparent 60%);
+        radial-gradient(at 15% 10%, rgba(2, 132, 199, 0.12) 0px, transparent 45%),
+        radial-gradient(at 85% 25%, rgba(99, 102, 241, 0.1) 0px, transparent 45%),
+        radial-gradient(at 30% 75%, rgba(6, 182, 212, 0.08) 0px, transparent 50%),
+        radial-gradient(at 80% 85%, rgba(0, 69, 128, 0.08) 0px, transparent 50%);
       background-attachment: fixed;
       position: relative;
       overflow-x: hidden;
       width: 100%;
-      margin: 0;
-      padding: 0;
+      min-height: 100vh;
     }
 
     ::selection {
-      background: var(--primary-soft);
-      color: var(--primary);
+      background: #bae6fd;
+      color: var(--brand-deep);
     }
 
-    /* Ambient Subtle Dot Pattern */
-    .bg-dots {
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background-image: radial-gradient(rgba(0, 69, 128, 0.07) 1px, transparent 1px);
+    /* Subtle architectural grid pattern */
+    .bg-matrix {
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(rgba(0, 54, 102, 0.07) 1px, transparent 1px);
       background-size: 28px 28px;
       pointer-events: none;
-      z-index: 0;
-      mask-image: linear-gradient(180deg, white, rgba(255, 255, 255, 0.4) 70%, transparent);
-      -webkit-mask-image: linear-gradient(180deg, white, rgba(255, 255, 255, 0.4) 70%, transparent);
+      z-index: 1;
+      mask-image: radial-gradient(ellipse at 50% 30%, black 50%, transparent 90%);
+      -webkit-mask-image: radial-gradient(ellipse at 50% 30%, black 50%, transparent 90%);
     }
 
     .container {
@@ -99,72 +91,29 @@
       margin: 0 auto;
       padding: 0 24px;
       position: relative;
-      z-index: 2;
+      z-index: 10;
     }
 
     /* ==========================================================================
-       TOP ANNOUNCEMENT BAR
-       ========================================================================== */
-    .top-bar {
-      background: linear-gradient(90deg, #003666 0%, #004580 50%, #0266b5 100%);
-      color: #ffffff;
-      padding: 8px 16px;
-      font-size: 13px;
-      font-weight: 500;
-      text-align: center;
-      position: relative;
-      z-index: 110;
-    }
-    .top-bar-inner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .top-bar-badge {
-      background: rgba(255, 255, 255, 0.2);
-      padding: 2px 10px;
-      border-radius: 999px;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .top-bar a {
-      color: #7dd3fc;
-      text-decoration: none;
-      font-weight: 700;
-      margin-left: 6px;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .top-bar a:hover {
-      text-decoration: underline;
-    }
-
-    /* ==========================================================================
-       HEADER & NAVIGATION (LIGHT GLASS PILL)
+       HEADER & NAVIGATION: CLEAN LIQUID GLASS CAPSULE
        ========================================================================== */
     .header-wrap {
       position: sticky;
-      top: 14px;
+      top: 16px;
       z-index: 100;
-      margin-bottom: 24px;
+      margin-bottom: 36px;
     }
     .nav-bar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: rgba(255, 255, 255, 0.9);
-      border: 1px solid rgba(226, 232, 240, 0.9);
+      padding: 9px 18px 9px 22px;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 1);
       border-radius: 999px;
-      padding: 10px 24px;
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      box-shadow: 0 10px 30px -5px rgba(0, 69, 128, 0.08), 0 0 1px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
+      box-shadow: 0 8px 24px -4px rgba(0, 54, 102, 0.08), 0 1px 2px rgba(0, 0, 0, 0.02);
     }
     .brand {
       display: flex;
@@ -173,63 +122,54 @@
       text-decoration: none;
     }
     .brand-logo-img {
-      height: 42px;
+      height: 38px;
       width: auto;
       object-fit: contain;
-      display: block;
-      transition: transform 0.2s;
-    }
-    .brand:hover .brand-logo-img {
-      transform: scale(1.03);
     }
     .brand-title-wrap {
       display: flex;
       flex-direction: column;
     }
     .brand-text {
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 19px;
+      font-weight: 900;
+      font-size: 18px;
       letter-spacing: -0.02em;
-      color: var(--primary);
-      line-height: 1.1;
+      color: var(--brand-deep);
     }
     .brand-tagline {
-      font-size: 10px;
-      color: var(--text-muted);
-      letter-spacing: 0.6px;
+      font-size: 9px;
+      font-weight: 800;
+      color: var(--brand-sky);
       text-transform: uppercase;
-      font-weight: 600;
+      letter-spacing: 0.8px;
     }
 
     .nav-links {
       display: flex;
-      gap: 28px;
-      list-style: none;
       align-items: center;
+      gap: 30px;
+      list-style: none;
     }
     .nav-links a {
-      color: var(--text-body);
+      color: var(--text-main);
+      font-size: 14px;
+      font-weight: 700;
       text-decoration: none;
-      font-size: 14.5px;
-      font-weight: 600;
-      transition: color 0.2s;
+      transition: color 0.15s ease;
       position: relative;
-      padding: 4px 0;
     }
     .nav-links a:hover {
-      color: var(--primary);
-    }
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; width: 0; height: 2px;
-      background: var(--primary);
-      transition: width 0.2s ease;
-      border-radius: 2px;
+      color: var(--brand-blue);
     }
     .nav-links a:hover::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
       width: 100%;
+      height: 2px;
+      background: var(--brand-sky);
+      border-radius: 99px;
     }
 
     .nav-actions {
@@ -238,1435 +178,735 @@
       gap: 12px;
     }
     .btn-zalo-pill {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      background: linear-gradient(135deg, var(--brand-deep) 0%, var(--brand-blue) 100%);
       color: #ffffff;
-      font-size: 13.5px;
-      font-weight: 700;
-      text-decoration: none;
       padding: 9px 20px;
       border-radius: 999px;
-      box-shadow: 0 6px 18px rgba(0, 69, 128, 0.25);
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 800;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      transition: all 0.25s ease;
+      gap: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 4px 14px rgba(0, 54, 102, 0.22);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
     .btn-zalo-pill:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(0, 69, 128, 0.35);
-      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(0, 54, 102, 0.32);
+      color: #ffffff;
     }
 
     /* ==========================================================================
-       HERO SECTION: 2-COLUMN WITH PRO WORKSPACE VISUAL
+       HERO: LUMINOUS FAST-RENDER SECTION
        ========================================================================== */
     .hero {
-      padding: 40px 0 70px;
+      padding: 45px 0 70px;
+      text-align: center;
       position: relative;
     }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 48px;
-      align-items: center;
-    }
-
-    .hero-left {
-      text-align: left;
-    }
-    .hero-pill {
+    .hero-badge-pill {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 6px 16px;
+      gap: 10px;
+      background: #ffffff;
+      border: 1px solid rgba(2, 132, 199, 0.3);
+      padding: 7px 20px;
       border-radius: 999px;
-      background: #f0f7ff;
-      border: 1px solid rgba(2, 132, 199, 0.25);
       font-size: 12px;
-      font-weight: 700;
-      color: var(--primary);
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      margin-bottom: 22px;
-      box-shadow: 0 2px 10px rgba(2, 132, 199, 0.08);
+      font-weight: 800;
+      color: var(--brand-deep);
+      margin-bottom: 24px;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.08);
     }
-    .pulse-leaf {
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--brand-emerald);
+      box-shadow: 0 0 8px var(--brand-emerald);
       display: inline-block;
-      animation: gentle-tilt 3s ease-in-out infinite;
-    }
-    @keyframes gentle-tilt {
-      0%, 100% { transform: rotate(0deg); }
-      50% { transform: rotate(10deg); }
     }
 
-    .hero-title {
-      font-family: var(--font-display);
-      font-size: clamp(32px, 4.5vw, 54px);
-      font-weight: 800;
-      line-height: 1.2;
-      letter-spacing: -0.025em;
-      color: var(--text-heading);
-      margin-bottom: 20px;
+    .hero-headline {
+      font-size: 58px;
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -0.035em;
+      margin-bottom: 22px;
+      color: var(--text-main);
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .hero-title .highlight-blue {
-      background: linear-gradient(135deg, #004580 0%, #0284c7 100%);
+    .liquid-chromatic-text {
+      background: linear-gradient(135deg, #003666 0%, #0056b3 40%, #0284c7 70%, #6366f1 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      display: inline;
+      display: inline-block;
+    }
+    .hero-subheadline {
+      font-size: 18px;
+      line-height: 1.65;
+      color: var(--text-sub);
+      max-width: 760px;
+      margin: 0 auto 36px;
+      font-weight: 500;
+    }
+    .hero-subheadline strong {
+      color: var(--text-main);
+      font-weight: 800;
     }
 
-    .hero-desc {
-      font-size: 16.5px;
-      color: var(--text-body);
-      line-height: 1.7;
-      margin-bottom: 34px;
-      max-width: 620px;
-    }
-
-    .hero-btn-group {
+    .hero-actions {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 16px;
-      flex-wrap: wrap;
-      margin-bottom: 32px;
+      margin-bottom: 46px;
     }
-    .btn-hero-solid {
-      background: linear-gradient(135deg, var(--primary) 0%, #0369a1 100%);
+    .btn-liquid-primary {
+      background: linear-gradient(135deg, var(--brand-deep) 0%, var(--brand-blue) 100%);
       color: #ffffff;
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 15.5px;
-      padding: 15px 34px;
+      padding: 14px 32px;
       border-radius: 999px;
+      font-size: 15px;
+      font-weight: 800;
       text-decoration: none;
-      box-shadow: 0 12px 28px rgba(0, 69, 128, 0.28);
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      transition: all 0.25s ease;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 8px 24px rgba(0, 69, 128, 0.28);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
-    .btn-hero-solid:hover {
+    .btn-liquid-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 18px 36px rgba(0, 69, 128, 0.38);
-      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      box-shadow: 0 12px 30px rgba(0, 69, 128, 0.38);
+      color: #ffffff;
     }
-    .btn-hero-outline {
+    .btn-liquid-secondary {
       background: #ffffff;
-      color: var(--text-heading);
-      font-family: var(--font-display);
-      font-weight: 600;
-      font-size: 15px;
-      padding: 14px 26px;
+      color: var(--text-main);
+      padding: 14px 28px;
       border-radius: 999px;
+      font-size: 15px;
+      font-weight: 800;
       text-decoration: none;
-      border: 1px solid var(--border-light);
-      box-shadow: var(--shadow-sm);
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      transition: all 0.2s ease;
+      border: 1px solid #cbd5e1;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+      transition: transform 0.15s ease, background-color 0.15s ease;
     }
-    .btn-hero-outline:hover {
-      background: var(--bg-subtle);
-      border-color: #cbd5e1;
-      transform: translateY(-1px);
-    }
-
-    .hero-trust-badges {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      padding-top: 16px;
-      border-top: 1px solid rgba(226, 232, 240, 0.8);
-    }
-    .trust-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text-muted);
-    }
-    .trust-item span.icon {
-      color: var(--teal-serene);
-      font-size: 15px;
-    }
-
-    /* Right Hero Visual Card */
-    .hero-right {
-      position: relative;
-    }
-    .hero-image-frame {
-      position: relative;
-      border-radius: 28px;
-      overflow: hidden;
-      background: #ffffff;
-      padding: 10px;
-      box-shadow: 0 25px 60px -15px rgba(0, 69, 128, 0.16), 0 0 1px rgba(0, 69, 128, 0.15);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-    }
-    .hero-image-inner {
-      border-radius: 20px;
-      overflow: hidden;
-      position: relative;
-      height: 440px;
-    }
-    .hero-image-inner img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.6s ease;
-    }
-    .hero-image-frame:hover .hero-image-inner img {
-      transform: scale(1.03);
-    }
-
-    /* Floating Badges on Hero Image */
-    .floating-card {
-      position: absolute;
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.8);
-      border-radius: 16px;
-      padding: 14px 18px;
-      box-shadow: 0 16px 32px rgba(0, 69, 128, 0.12);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      z-index: 3;
-      animation: float-gentle 4s ease-in-out infinite;
-    }
-    .float-top {
-      top: 24px;
-      left: -20px;
-    }
-    .float-bottom {
-      bottom: 24px;
-      right: -16px;
-      animation-delay: 2s;
-    }
-    @keyframes float-gentle {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-    .float-icon {
-      width: 38px;
-      height: 38px;
-      border-radius: 10px;
-      background: var(--primary-tint);
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      flex-shrink: 0;
-    }
-    .float-info h4 {
-      font-size: 13px;
-      font-weight: 800;
-      color: var(--text-heading);
-      line-height: 1.2;
-    }
-    .float-info p {
-      font-size: 11px;
-      color: var(--text-muted);
-      margin-top: 2px;
+    .btn-liquid-secondary:hover {
+      background: #f1f5f9;
+      transform: translateY(-2px);
     }
 
     /* ==========================================================================
-       4 OVERLAPPING FLOATING FEATURE CARDS (EXACT REFERENCE KEY ELEMENT)
+       LIQUID STAGE: INTERACTIVE LIVE RUNTIME
        ========================================================================== */
-    .feature-cards-section {
-      position: relative;
-      margin-top: -30px;
-      margin-bottom: 70px;
-      z-index: 10;
-    }
-    .feature-cards-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-
-    .feat-card {
+    .liquid-stage {
+      max-width: 1140px;
+      margin: 0 auto;
+      border-radius: 28px;
       background: #ffffff;
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      border-radius: 20px;
-      padding: 28px 24px;
-      box-shadow: 0 16px 36px -10px rgba(0, 69, 128, 0.08);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      position: relative;
+      border: 1px solid rgba(226, 232, 240, 0.95);
+      box-shadow: 0 20px 50px -10px rgba(0, 54, 102, 0.12), 0 0 1px rgba(0, 54, 102, 0.1);
+      padding: 26px;
     }
-    .feat-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 24px 48px -12px rgba(0, 69, 128, 0.16);
-      border-color: #bae6fd;
-    }
-
-    .feat-icon-box {
-      width: 52px;
-      height: 52px;
-      border-radius: 14px;
-      background: #f0f7ff;
-      border: 1px solid #e0f2fe;
-      color: var(--primary);
+    .stage-chrome {
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      margin-bottom: 20px;
-      transition: transform 0.2s;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #f1f5f9;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
     }
-    .feat-card:hover .feat-icon-box {
-      transform: scale(1.08);
-      background: #e0f2fe;
+    .chrome-dots {
+      display: flex;
+      gap: 7px;
     }
+    .chrome-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+    }
+    .dot-red { background: #ff5f56; }
+    .dot-yellow { background: #ffbd2e; }
+    .dot-green { background: #27c93f; }
 
-    .feat-card-title {
+    /* Switcher Tabs */
+    .liquid-stage-tabs {
+      display: flex;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 999px;
+      padding: 4px;
+      gap: 4px;
+    }
+    .liquid-tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
       font-family: var(--font-display);
-      font-size: 17.5px;
-      font-weight: 700;
-      color: var(--text-heading);
-      margin-bottom: 10px;
-      line-height: 1.3;
-    }
-    .feat-card-desc {
       font-size: 13.5px;
-      color: var(--text-body);
-      line-height: 1.6;
-      margin-bottom: 20px;
+      font-weight: 800;
+      padding: 8px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 7px;
     }
-    .feat-link {
-      font-size: 13px;
+    .liquid-tab-btn:hover {
+      color: var(--brand-deep);
+    }
+    .liquid-tab-btn.active {
+      background: #ffffff;
+      color: var(--brand-deep);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+    .stage-status-live {
+      font-family: var(--font-mono);
+      font-size: 12px;
       font-weight: 700;
-      color: var(--primary);
-      text-decoration: none;
-      display: inline-flex;
+      color: var(--brand-blue);
+      display: flex;
       align-items: center;
       gap: 6px;
-      transition: gap 0.2s;
-    }
-    .feat-link:hover {
-      gap: 10px;
-      color: var(--primary-light);
-    }
-
-    /* Card 4: Solid Accent Card (Exact reference design: deep serene blue) */
-    .feat-card.card-accent-solid {
-      background: linear-gradient(145deg, #003666 0%, #004580 50%, #0266b5 100%);
-      color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 20px 40px -10px rgba(0, 69, 128, 0.35);
-    }
-    .feat-card.card-accent-solid .feat-card-title {
-      color: #ffffff;
-      font-size: 19px;
-    }
-    .feat-card.card-accent-solid .feat-card-desc {
-      color: #e0f2fe;
-    }
-    .btn-card-white {
-      background: #ffffff;
-      color: var(--primary);
-      font-weight: 800;
-      font-size: 13.5px;
-      padding: 10px 20px;
+      background: rgba(2, 132, 199, 0.08);
+      padding: 5px 12px;
       border-radius: 999px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      transition: all 0.2s;
-    }
-    .btn-card-white:hover {
-      transform: scale(1.03);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
-      color: var(--primary-dark);
     }
 
-    /* ==========================================================================
-       TRUST & PARTNER LOGO MARQUEE (SUBTLE & REFINED)
-       ========================================================================== */
-    .partners-section {
-      padding: 30px 0 60px;
-      text-align: center;
-      border-bottom: 1px solid var(--border-light);
+    /* Panes */
+    .stage-pane {
+      display: none;
     }
-    .partners-label {
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      margin-bottom: 24px;
-    }
-    .marquee-container {
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-      mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-      -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-    }
-    .marquee-track {
-      display: flex;
-      align-items: center;
-      gap: 48px;
-      width: max-content;
-      animation: scroll-marquee 28s linear infinite;
-    }
-    @keyframes scroll-marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    .partner-brand-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #475569;
-      font-family: var(--font-display);
-      font-size: 16px;
-      font-weight: 700;
-      opacity: 0.75;
-      transition: opacity 0.2s;
-      white-space: nowrap;
-    }
-    .partner-brand-item:hover {
-      opacity: 1;
-      color: var(--primary);
-    }
-    .partner-logo-badge {
-      width: 30px;
-      height: 30px;
-      border-radius: 8px;
-      background: #e2e8f0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 13px;
-      font-weight: 800;
-      color: #334155;
-    }
-
-    /* ==========================================================================
-       ABOUT & PHILOSOPHY: "BUILD FUTURE" SECTION (LIKE REFERENCE)
-       ========================================================================== */
-    .about-future {
-      padding: 80px 0;
-    }
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 54px;
-      align-items: center;
-    }
-
-    .about-left {
-      text-align: left;
-    }
-    .section-tag {
-      font-size: 12px;
-      font-weight: 800;
-      color: var(--primary);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 12px;
-      display: block;
-    }
-    .section-title {
-      font-family: var(--font-display);
-      font-size: clamp(28px, 3.8vw, 42px);
-      font-weight: 800;
-      line-height: 1.25;
-      color: var(--text-heading);
-      letter-spacing: -0.02em;
-      margin-bottom: 20px;
-    }
-
-    /* Practical Quote with Handwritten Script */
-    .quote-block {
-      background: #ffffff;
-      border-left: 4px solid var(--primary);
-      border-radius: 0 16px 16px 0;
-      padding: 20px 24px;
-      box-shadow: var(--shadow-sm);
-      margin-bottom: 30px;
-    }
-    .quote-text {
-      font-size: 15px;
-      font-style: italic;
-      color: #334155;
-      line-height: 1.7;
-      margin-bottom: 10px;
-    }
-    .quote-author {
-      font-family: var(--font-script);
-      font-size: 26px;
-      color: var(--primary);
-      font-weight: 700;
-    }
-
-    /* Quick Inline Contact Action (Like Reference Image) */
-    .quick-consult-box {
-      background: #ffffff;
-      border: 1px solid var(--border-light);
-      border-radius: 18px;
-      padding: 24px;
-      box-shadow: var(--shadow-md);
-      margin-bottom: 36px;
-    }
-    .quick-consult-title {
-      font-size: 14.5px;
-      font-weight: 700;
-      color: var(--text-heading);
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .quick-consult-form {
-      display: flex;
-      gap: 10px;
-    }
-    .quick-input {
-      flex: 1;
-      padding: 12px 18px;
-      border-radius: 999px;
-      border: 1px solid #cbd5e1;
-      font-size: 14px;
-      font-family: var(--font-body);
-      outline: none;
-      transition: all 0.2s;
-    }
-    .quick-input:focus {
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(0, 69, 128, 0.12);
-    }
-    .quick-submit-btn {
-      background: var(--primary);
-      color: #ffffff;
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 14px;
-      padding: 12px 24px;
-      border-radius: 999px;
-      border: none;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: background 0.2s;
-    }
-    .quick-submit-btn:hover {
-      background: var(--primary-dark);
-    }
-
-    /* 2 Pillars Breakdown */
-    .pillars-two {
+    .stage-pane.active {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    .pillar-subitem h4 {
-      font-size: 15px;
-      font-weight: 800;
-      color: var(--text-heading);
-      margin-bottom: 6px;
-      display: flex;
+      gap: 32px;
       align-items: center;
-      gap: 6px;
-    }
-    .pillar-subitem p {
-      font-size: 13px;
-      color: var(--text-body);
-      line-height: 1.6;
+      text-align: left;
     }
 
-    /* Right About Image Collage */
-    .about-right {
-      position: relative;
-    }
-    .about-collage {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 16px;
-      position: relative;
-    }
-    .collage-img-1 {
-      border-radius: 24px;
-      overflow: hidden;
-      height: 380px;
-      box-shadow: var(--shadow-lg);
-      border: 1px solid rgba(226, 232, 240, 0.8);
-    }
-    .collage-img-1 img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .collage-img-2 {
-      border-radius: 20px;
-      overflow: hidden;
-      height: 260px;
-      margin-top: 50px;
-      box-shadow: var(--shadow-lg);
-      border: 1px solid rgba(226, 232, 240, 0.8);
-    }
-    .collage-img-2 img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    /* Stat Box (Like Reference Image "19") */
-    .stat-badge-box {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-      color: #ffffff;
-      border-radius: 20px;
-      padding: 22px 20px;
-      text-align: center;
-      box-shadow: 0 16px 36px rgba(0, 69, 128, 0.28);
-      z-index: 4;
-      border: 2px solid #ffffff;
-      min-width: 130px;
-    }
-    .stat-badge-box .number {
-      font-family: var(--font-display);
-      font-size: 44px;
+    /* Left Pane */
+    .pane-info h3 {
+      font-size: 28px;
       font-weight: 900;
-      line-height: 1;
-      margin-bottom: 4px;
+      color: var(--text-main);
+      line-height: 1.25;
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
     }
-    .stat-badge-box .label {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: #e0f2fe;
-    }
-
-    /* ==========================================================================
-       STRATEGIC SERVICES & SOLUTIONS (CLEAN ELEMENTOR CARDS)
-       ========================================================================== */
-    .services-section {
-      padding: 70px 0 90px;
-      background: #f1f5f9;
-      border-top: 1px solid var(--border-light);
-      border-bottom: 1px solid var(--border-light);
-    }
-    .section-header-center {
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto 50px;
-    }
-    .section-subtext {
-      font-size: 15.5px;
-      color: var(--text-body);
-      line-height: 1.6;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-
-    .service-box {
-      background: #ffffff;
-      border: 1px solid var(--border-light);
-      border-radius: 22px;
-      padding: 34px 28px;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .service-box:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-lg);
-      border-color: #bae6fd;
-    }
-
-    .service-header-icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 16px;
-      background: var(--primary-tint);
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 26px;
-      margin-bottom: 22px;
-      border: 1px solid rgba(0, 69, 128, 0.1);
-    }
-    .service-box-title {
-      font-family: var(--font-display);
-      font-size: 20px;
-      font-weight: 800;
-      color: var(--text-heading);
-      margin-bottom: 12px;
-      line-height: 1.3;
-    }
-    .service-box-desc {
-      font-size: 14px;
-      color: var(--text-body);
+    .pane-info p {
+      font-size: 15px;
       line-height: 1.65;
-      margin-bottom: 24px;
+      color: var(--text-sub);
+      margin-bottom: 22px;
     }
-    .service-list {
+    .pane-feature-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
       margin-bottom: 26px;
     }
-    .service-list li {
-      font-size: 13.5px;
-      color: #334155;
+    .pane-feature-list li {
       display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      line-height: 1.5;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-main);
     }
-    .service-list li span.check {
-      color: var(--primary-sky);
-      font-weight: bold;
-    }
-
-    .btn-service-action {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--primary);
-      text-decoration: none;
+    .liquid-check-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(2, 132, 199, 0.12);
+      color: var(--brand-sky);
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding-top: 14px;
-      border-top: 1px solid #f1f5f9;
-      transition: all 0.2s;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 900;
     }
-    .btn-service-action:hover {
-      color: var(--primary-light);
-      gap: 10px;
+    .btn-pane-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--brand-deep) 0%, var(--brand-blue) 100%);
+      color: #ffffff;
+      padding: 11px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 800;
+      box-shadow: 0 4px 16px rgba(0, 69, 128, 0.25);
+      transition: transform 0.15s ease;
+    }
+    .btn-pane-action:hover {
+      transform: translateY(-1px);
+      color: #ffffff;
+    }
+
+    /* Right Pane: High-Tech Simulated UI Card */
+    .liquid-mock-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(0, 54, 102, 0.04);
+      position: relative;
+    }
+    .mock-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    .mock-title {
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--brand-deep);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .mock-tag {
+      background: rgba(2, 132, 199, 0.1);
+      color: var(--brand-sky);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      border: 1px solid rgba(2, 132, 199, 0.25);
+    }
+
+    /* Live Data Rows */
+    .mock-stream-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    }
+    .mock-pill-success {
+      background: rgba(16, 185, 129, 0.12);
+      color: #059669;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      padding: 3px 8px;
+      border-radius: 99px;
+      font-weight: 800;
+    }
+    .mock-progress-bar {
+      height: 7px;
+      background: #e2e8f0;
+      border-radius: 99px;
+      overflow: hidden;
+      margin: 14px 0 6px;
+    }
+    .mock-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #0284c7, #6366f1);
+      border-radius: 99px;
+      width: 78%;
     }
 
     /* ==========================================================================
-       NUMBERS & RECOGNITION (LIKE REFERENCE IMAGE ROW)
+       BENTO GRID SHOWCASE
        ========================================================================== */
-    .metrics-section {
-      padding: 60px 0;
-      background: #ffffff;
-      border-bottom: 1px solid var(--border-light);
+    .bento-section {
+      padding: 85px 0 75px;
+      position: relative;
     }
-    .metrics-row {
+    .section-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--brand-sky);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+      display: inline-block;
+      background: rgba(2, 132, 199, 0.08);
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+    .section-headline {
+      font-size: 42px;
+      font-weight: 900;
+      color: var(--text-main);
+      line-height: 1.18;
+      letter-spacing: -0.025em;
+      margin-bottom: 16px;
+    }
+    .section-desc {
+      font-size: 16.5px;
+      color: var(--text-sub);
+      max-width: 680px;
+      margin-bottom: 44px;
+    }
+
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 22px;
+    }
+    .bento-card {
+      background: #ffffff;
+      border: 1px solid rgba(226, 232, 240, 0.95);
+      border-radius: 24px;
+      padding: 32px;
+      position: relative;
+      box-shadow: var(--glass-shadow);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    }
+    .bento-card:hover {
+      border-color: rgba(2, 132, 199, 0.4);
+      transform: translateY(-2px);
+      box-shadow: var(--glass-shadow-hover);
+    }
+
+    .col-span-8 { grid-column: span 8; }
+    .col-span-4 { grid-column: span 4; }
+    .col-span-6 { grid-column: span 6; }
+    .col-span-12 { grid-column: span 12; }
+
+    .card-icon-badge {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 18px;
+    }
+    .bento-card h4 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+    .bento-card p {
+      font-size: 14.5px;
+      color: var(--text-sub);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    /* Bento Live Code */
+    .bento-code-box {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 16px;
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+    .code-comment { color: #64748b; }
+    .code-keyword { color: #38bdf8; }
+    .code-string { color: #34d399; }
+    .code-number { color: #f472b6; }
+
+    /* Bento Stat Highlight */
+    .stat-hero-number {
+      font-size: 52px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 6px;
+      background: linear-gradient(135deg, var(--brand-deep) 30%, var(--brand-sky) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .stat-hero-label {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--text-main);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    /* ==========================================================================
+       METRICS STRIP
+       ========================================================================== */
+    .metrics-strip {
+      padding: 44px 0;
+      border-top: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+      background: #ffffff;
+    }
+    .metrics-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 24px;
       text-align: center;
     }
-    .metric-card-simple {
-      padding: 20px 10px;
-    }
-    .metric-big-num {
-      font-family: var(--font-display);
-      font-size: 40px;
+    .metric-item-val {
+      font-size: 44px;
       font-weight: 900;
-      color: var(--primary);
+      color: var(--brand-deep);
+      letter-spacing: -0.02em;
       line-height: 1.1;
       margin-bottom: 6px;
     }
-    .metric-title {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-heading);
+    .metric-item-name {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: var(--text-main);
       margin-bottom: 4px;
     }
-    .metric-sub {
+    .metric-item-sub {
       font-size: 12.5px;
       color: var(--text-muted);
     }
 
     /* ==========================================================================
-       FOUNDER SHOWCASE (EXECUTIVE CARD)
+       FOUNDER EDITORIAL
        ========================================================================== */
-    .founder-wrap {
-      padding: 80px 0;
+    .founder-section {
+      padding: 75px 0;
     }
-    .founder-card-serene {
+    .founder-liquid-card {
       background: #ffffff;
-      border: 1px solid var(--border-light);
+      border: 1px solid #e2e8f0;
       border-radius: 28px;
-      padding: 48px;
-      box-shadow: var(--shadow-lg);
+      padding: 44px;
       display: grid;
       grid-template-columns: auto 1fr;
       gap: 36px;
       align-items: center;
-      position: relative;
-      overflow: hidden;
+      box-shadow: var(--glass-shadow);
     }
-    .founder-card-serene::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; width: 6px; height: 100%;
-      background: linear-gradient(180deg, var(--primary) 0%, var(--primary-sky) 100%);
-    }
-    .founder-avatar-box {
-      width: 100px;
-      height: 100px;
-      border-radius: 22px;
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-      color: #ffffff;
+    .founder-avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--brand-deep) 0%, var(--brand-sky) 100%);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: var(--font-display);
-      font-size: 36px;
+      font-size: 28px;
       font-weight: 900;
-      box-shadow: 0 10px 24px rgba(0, 69, 128, 0.25);
-      border: 3px solid #ffffff;
-      flex-shrink: 0;
+      color: #ffffff;
+      box-shadow: 0 8px 20px rgba(0, 54, 102, 0.2);
     }
-    .founder-quote-text {
-      font-size: 16px;
+    .founder-quote {
+      font-size: 18.5px;
+      line-height: 1.65;
+      color: var(--text-main);
       font-style: italic;
-      color: #334155;
-      line-height: 1.7;
       margin-bottom: 18px;
+      font-weight: 500;
     }
-    .founder-author-name {
-      font-family: var(--font-display);
-      font-size: 21px;
-      font-weight: 800;
-      color: var(--text-heading);
+    .founder-name {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--brand-deep);
     }
-    .founder-author-role {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--primary);
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      margin-top: 2px;
+    .founder-role {
+      font-size: 13.5px;
+      color: var(--brand-sky);
+      font-weight: 700;
     }
 
     /* ==========================================================================
        CONVERSION CTA BANNER
        ========================================================================== */
-    .cta-banner-section {
-      padding: 0 0 80px;
+    .cta-slab-section {
+      padding: 30px 0 85px;
     }
-    .cta-serene-box {
-      background: linear-gradient(135deg, #00305a 0%, #004580 50%, #0266b5 100%);
-      color: #ffffff;
-      border-radius: 30px;
-      padding: 60px 40px;
+    .cta-slab {
+      background: linear-gradient(135deg, var(--brand-deep) 0%, #004580 50%, var(--brand-blue) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 32px;
+      padding: 60px 32px;
       text-align: center;
       position: relative;
       overflow: hidden;
-      box-shadow: 0 25px 60px -15px rgba(0, 69, 128, 0.35);
+      box-shadow: 0 20px 50px -10px rgba(0, 54, 102, 0.3);
     }
-    .cta-serene-box::after {
-      content: '';
-      position: absolute;
-      top: -50%; right: -20%; width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, transparent 60%);
-      pointer-events: none;
-    }
-    .cta-title {
-      font-family: var(--font-display);
-      font-size: clamp(26px, 4vw, 38px);
-      font-weight: 800;
+    .cta-slab-title {
+      font-size: 40px;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.2;
       margin-bottom: 16px;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.025em;
     }
-    .cta-desc {
+    .cta-slab-desc {
       font-size: 16.5px;
       color: #e0f2fe;
-      max-width: 680px;
-      margin: 0 auto 34px;
-      line-height: 1.65;
+      max-width: 620px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
     }
-    .cta-btn-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .btn-cta-white {
+    .btn-cta-liquid {
       background: #ffffff;
-      color: var(--primary);
-      font-family: var(--font-display);
-      font-size: 16px;
+      color: var(--brand-deep);
+      font-size: 15px;
       font-weight: 800;
-      padding: 15px 36px;
+      padding: 14px 32px;
       border-radius: 999px;
       text-decoration: none;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-      transition: all 0.25s ease;
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      transition: transform 0.15s ease;
     }
-    .btn-cta-white:hover {
+    .btn-cta-liquid:hover {
       transform: translateY(-2px);
-      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.25);
-      color: var(--primary-dark);
+      background: #f8fafc;
     }
 
     /* ==========================================================================
-       FOOTER (4-COLUMN CORPORATE CLEAN)
+       FOOTER
        ========================================================================== */
     footer {
+      border-top: 1px solid #e2e8f0;
       background: #ffffff;
-      border-top: 1px solid var(--border-light);
-      padding: 60px 0 30px;
-      font-size: 14px;
-      color: var(--text-muted);
+      padding: 55px 0 30px;
+      font-size: 13.5px;
     }
-    .footer-top-grid {
+    .footer-grid {
       display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
       gap: 40px;
-      margin-bottom: 50px;
-      text-align: left;
+      margin-bottom: 45px;
     }
-    .footer-col h4 {
-      font-family: var(--font-display);
-      font-size: 15px;
+    .footer-brand-desc {
+      color: var(--text-sub);
+      line-height: 1.6;
+      margin-top: 14px;
+      max-width: 320px;
+    }
+    .footer-col h5 {
+      font-size: 13.5px;
       font-weight: 800;
-      color: var(--text-heading);
-      margin-bottom: 18px;
+      color: var(--text-main);
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.8px;
+      margin-bottom: 18px;
     }
     .footer-col ul {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
     }
     .footer-col ul a {
-      color: var(--text-body);
+      color: var(--text-sub);
       text-decoration: none;
-      transition: color 0.2s;
+      font-weight: 600;
+      transition: color 0.15s;
     }
     .footer-col ul a:hover {
-      color: var(--primary);
+      color: var(--brand-sky);
     }
-    .footer-contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      margin-bottom: 10px;
-      font-size: 13.5px;
-      color: var(--text-body);
-    }
-
     .footer-bottom {
       border-top: 1px solid #f1f5f9;
       padding-top: 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-      font-size: 13px;
-    }
-
-    /* ==========================    /* ==========================================================================
-       FLOATING ZALO WIDGET (SLEEK FAB - NO SCREEN CUTOFF)
-       ========================================================================== */
-    .zalo-fab {
-      position: fixed;
-      bottom: 24px;
-      right: 20px;
-      z-index: 999;
-      background: linear-gradient(135deg, #003666 0%, #004580 50%, #0284c7 100%);
-      color: #ffffff;
-      border-radius: 999px;
-      padding: 10px 18px 10px 14px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 10px 28px rgba(0, 69, 128, 0.35);
-      text-decoration: none;
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 13.5px;
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .zalo-fab:hover {
-      transform: translateY(-3px) scale(1.03);
-      box-shadow: 0 14px 34px rgba(0, 69, 128, 0.45);
-      color: #ffffff;
-    }
-    .zalo-fab-ping {
-      position: absolute;
-      inset: -3px;
-      border-radius: 999px;
-      border: 2px solid rgba(2, 132, 199, 0.7);
-      animation: fab-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
-      pointer-events: none;
-    }
-    @keyframes fab-ping {
-      0% { transform: scale(0.96); opacity: 0.9; }
-      80%, 100% { transform: scale(1.15); opacity: 0; }
-    }
-    .zalo-fab-icon {
-      font-size: 18px;
-      display: inline-flex;
+      color: var(--text-muted);
+      font-size: 12.5px;
     }
 
     /* ==========================================================================
-       RESPONSIVE BREAKPOINTS
+       FLOATING ZALO CAPSULE
        ========================================================================== */
-    @media (max-width: 1024px) {
-      .feature-cards-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .footer-top-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-      .about-collage {
-        max-width: 600px;
-        margin: 0 auto;
-      }
+    .zalo-fab {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      background: linear-gradient(135deg, var(--brand-deep) 0%, var(--brand-blue) 100%);
+      color: #ffffff;
+      border-radius: 999px;
+      padding: 11px 22px 11px 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 10px 30px rgba(0, 69, 128, 0.35);
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 13.5px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      transition: transform 0.15s ease;
+    }
+    .zalo-fab:hover {
+      transform: translateY(-2px);
+      color: #ffffff;
     }
 
-    @media (max-width: 820px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 28px;
-      }
-      .hero-right {
-        order: 2; /* Text comes FIRST, Photo comes SECOND */
-      }
-      .hero-image-inner {
-        height: 280px;
-      }
-      .metrics-row {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    /* ==========================================================================
+       MOBILE RESPONSIVENESS
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .col-span-8 { grid-column: span 12; }
+      .col-span-4 { grid-column: span 12; }
+      .col-span-6 { grid-column: span 12; }
+      .stage-pane.active { grid-template-columns: 1fr; }
+      .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
     }
 
     @media (max-width: 768px) {
-      body {
-        padding-bottom: 20px; /* No heavy fixed bottom slab needed */
-      }
-      .container {
-        padding: 0 16px;
-      }
-
-      /* 1. Hide the heavy 3-line blue top bar on mobile to give maximum screen space */
-      .top-bar {
-        display: none;
-      }
-
-      /* 2. Sleek sticky header */
-      .header-wrap {
-        top: 8px;
-        margin-bottom: 12px;
-      }
-      .nav-bar {
-        padding: 6px 14px;
-      }
-      .nav-links {
-        display: none;
-      }
-      .brand-logo-img {
-        height: 32px;
-      }
-      .brand-text {
-        font-size: 15.5px;
-      }
-      .brand-tagline {
-        font-size: 8px;
-        letter-spacing: 0.4px;
-      }
-      .nav-actions .btn-zalo-pill {
-        padding: 6px 14px;
-        font-size: 12px;
-        font-weight: 700;
-        box-shadow: 0 3px 10px rgba(0, 69, 128, 0.2);
-      }
-
-      /* 3. Hero Section - Typography and Content First */
-      .hero {
-        padding: 16px 0 32px;
-      }
-      .hero-pill {
-        font-size: 10.5px;
-        padding: 5px 12px;
-        margin-bottom: 14px;
-        letter-spacing: 0.4px;
-        line-height: 1.4;
-      }
-      .hero-title {
-        font-size: 25px;
-        line-height: 1.25;
-        letter-spacing: -0.02em;
-        margin-bottom: 12px;
-      }
-      .hero-title br {
-        display: none; /* Avoid awkward orphaned words and lone '&' */
-      }
-      .hero-desc {
-        font-size: 14px;
-        line-height: 1.6;
-        margin-bottom: 18px;
-      }
-      .hero-btn-group {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-bottom: 18px;
-      }
-      .btn-hero-solid {
-        display: inline-flex;
-        align-items: center;
-        width: auto;
-        padding: 11px 22px;
-        font-size: 13.5px;
-        border-radius: 999px;
-      }
-      .btn-hero-outline {
-        display: inline-flex;
-        align-items: center;
-        width: auto;
-        padding: 10px 18px;
-        font-size: 13px;
-        border-radius: 999px;
-      }
-      .hero-trust-badges {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 8px;
-        padding-top: 14px;
-        border-top: 1px solid rgba(226, 232, 240, 0.8);
-      }
-      .trust-item {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        background: #ffffff;
-        border: 1px solid #e2e8f0;
-        padding: 5px 12px;
-        border-radius: 999px;
-        font-size: 11.5px;
-        font-weight: 600;
-        color: var(--text-body);
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
-      }
-
-      /* 4. Hero Visual Photo Frame & Symmetrical 2-Column Stats */
-      .hero-right {
-        order: 2;
-        margin-top: 8px;
-      }
-      .hero-image-frame {
-        padding: 6px;
-        border-radius: 20px;
-      }
-      .hero-image-inner {
-        height: 240px;
-        border-radius: 16px;
-      }
-      .hero-stats-group {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        margin-top: 12px;
-      }
-      .floating-card {
-        position: static !important;
-        top: auto !important;
-        left: auto !important;
-        right: auto !important;
-        bottom: auto !important;
-        animation: none !important;
-        margin: 0 !important;
-        width: 100% !important;
-        padding: 11px 12px !important;
-        border-radius: 14px !important;
-        background: #ffffff !important;
-        border: 1px solid rgba(226, 232, 240, 0.9) !important;
-        box-shadow: 0 4px 14px rgba(0, 69, 128, 0.06) !important;
-      }
-      .float-icon {
-        width: 32px;
-        height: 32px;
-        font-size: 15px;
-        border-radius: 8px;
-      }
-      .float-info h4 {
-        font-size: 12px;
-        line-height: 1.2;
-      }
-      .float-info p {
-        font-size: 10.5px;
-        line-height: 1.3;
-      }
-
-      /* 5. Feature Cards Section */
-      .feature-cards-section {
-        margin-top: 16px;
-        margin-bottom: 36px;
-      }
-      .feature-cards-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-      .feat-card {
-        padding: 18px 16px;
-        border-radius: 16px;
-      }
-      .feat-icon-box {
-        width: 42px;
-        height: 42px;
-        font-size: 20px;
-        margin-bottom: 12px;
-      }
-      .feat-card-title {
-        font-size: 16px;
-        margin-bottom: 8px;
-      }
-      .feat-card-desc {
-        font-size: 13px;
-        line-height: 1.5;
-        margin-bottom: 14px;
-      }
-
-      /* 6. About Section */
-      .about-future {
-        padding: 36px 0;
-      }
-      .about-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-      }
-      .quote-block {
-        padding: 14px 16px;
-        margin-bottom: 20px;
-      }
-      .quote-text {
-        font-size: 13.5px;
-      }
-      .quote-author {
-        font-size: 22px;
-      }
-      .quick-consult-box {
-        padding: 18px 14px;
-        margin-bottom: 20px;
-      }
-      .quick-consult-form {
-        flex-direction: column;
-        gap: 8px;
-      }
-      .quick-input, .quick-submit-btn {
-        width: 100%;
-        border-radius: 10px;
-      }
-      .quick-submit-btn {
-        padding: 12px;
-      }
-      .pillars-two {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-      .about-collage {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-      .collage-img-1 {
-        height: 200px;
-        border-radius: 16px;
-      }
-      .collage-img-2 {
-        display: none; /* Keep mobile view clean */
-      }
-      .stat-badge-box {
-        top: 10px;
-        right: 10px;
-        padding: 10px 14px;
-        border-radius: 12px;
-        min-width: 90px;
-      }
-      .stat-badge-box .number {
-        font-size: 20px;
-      }
-      .stat-badge-box .label {
-        font-size: 9.5px;
-      }
-
-      /* 7. Services Section */
-      .services-section {
-        padding: 36px 0;
-      }
-      .section-title {
-        font-size: 22px;
-        line-height: 1.25;
-      }
-      .section-subtext {
-        font-size: 13px;
-        margin-bottom: 22px;
-      }
-      .services-grid {
-        grid-template-columns: 1fr;
-        gap: 14px;
-      }
-      .service-box {
-        padding: 20px 16px;
-        border-radius: 16px;
-      }
-      .service-box-title {
-        font-size: 17.5px;
-      }
-      .service-box-desc {
-        font-size: 13px;
-        margin-bottom: 16px;
-      }
-      .service-list li {
-        font-size: 12.5px;
-        line-height: 1.45;
-      }
-      .btn-service-action {
-        width: 100%;
-        justify-content: center;
-        padding: 11px 16px;
-        font-size: 13.5px;
-      }
-
-      /* 8. Metrics Section */
-      .metrics-section {
-        padding: 28px 0;
-      }
-      .metrics-row {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-      }
-      .metric-card-simple {
-        padding: 14px 10px;
-        border-radius: 12px;
-      }
-      .metric-big-num {
-        font-size: 24px;
-      }
-      .metric-title {
-        font-size: 12px;
-      }
-      .metric-sub {
-        font-size: 10.5px;
-      }
-
-      /* 9. Founder Card */
-      .founder-wrap {
-        padding: 24px 0;
-      }
-      .founder-card-serene {
-        grid-template-columns: 1fr;
-        padding: 20px 16px;
-        border-radius: 16px;
-        text-align: center;
-      }
-      .founder-avatar-box {
-        width: 52px;
-        height: 52px;
-        font-size: 18px;
-        margin: 0 auto 12px;
-      }
-      .founder-quote-text {
-        font-size: 13.5px;
-        line-height: 1.55;
-      }
-
-      /* 10. CTA Banner */
-      .cta-banner-section {
-        padding: 16px 0 24px;
-      }
-      .cta-serene-box {
-        padding: 28px 16px;
-        border-radius: 18px;
-        text-align: center;
-      }
-      .cta-title {
-        font-size: 20px;
-      }
-      .cta-desc {
-        font-size: 13px;
-        margin-bottom: 18px;
-      }
-      .btn-cta-white {
-        width: 100%;
-        justify-content: center;
-        padding: 12px 18px;
-        font-size: 14px;
-      }
-
-      /* 11. Footer */
-      footer {
-        padding: 30px 0 20px;
-      }
-      .footer-top-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      .footer-col h4 {
-        margin-bottom: 10px;
-        font-size: 13.5px;
-      }
-      .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
-        font-size: 11.5px;
-      }
-
-      /* 12. Zalo FAB Active */
-      .zalo-fab {
-        display: inline-flex;
-      }
+      .container { padding: 0 16px; }
+      .nav-links { display: none; }
+      .hero { padding: 36px 0 50px; }
+      .hero-headline { font-size: 32px; letter-spacing: -0.02em; }
+      .hero-subheadline { font-size: 15px; }
+      .hero-actions { flex-direction: column; width: 100%; }
+      .btn-liquid-primary, .btn-liquid-secondary { width: 100%; justify-content: center; }
+      .liquid-stage { padding: 16px; border-radius: 20px; }
+      .liquid-stage-tabs { overflow-x: auto; max-width: 100%; }
+      .liquid-tab-btn { font-size: 12px; padding: 6px 12px; white-space: nowrap; }
+      .founder-liquid-card { grid-template-columns: 1fr; text-align: center; padding: 28px 20px; }
+      .founder-avatar { margin: 0 auto; }
+      .founder-quote { font-size: 16px; }
+      .cta-slab { padding: 40px 20px; border-radius: 24px; }
+      .cta-slab-title { font-size: 26px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; text-align: center; gap: 10px; }
+      .zalo-fab { bottom: 20px; right: 18px; padding: 10px 18px; font-size: 12.5px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Ambient Light Pattern -->
-  <div class="bg-dots"></div>
+  <div class="bg-matrix"></div>
 
-  <!-- Top Announcement Bar -->
-  <div class="top-bar">
-    <div class="container top-bar-inner">
-      <span class="top-bar-badge">2MH GROUP</span>
-      <span>Thành lập từ 2025 • Giải pháp phần mềm tự động hóa & website bán hàng chuyên nghiệp.</span>
-      <a href="https://zalo.me/0385499179" target="_blank">💬 Nhắn Tin Zalo</a>
-    </div>
-  </div>
-
-  <!-- Header -->
+  <!-- Header: Clean Pill Navigation -->
   <div class="container header-wrap">
     <nav class="nav-bar">
       <a href="#" class="brand">
@@ -1678,450 +918,484 @@
       </a>
 
       <ul class="nav-links">
-        <li><a href="#about">Trang Chủ</a></li>
-        <li><a href="#services">Dịch Vụ</a></li>
-        <li><a href="#ecommerce-web">Web Bán Hàng</a></li>
-        <li><a href="#media">2MH Media</a></li>
-        <li><a href="#founder">Về Chúng Tôi</a></li>
+        <li><a href="#ecosystem">Hệ Sinh Thái</a></li>
+        <li><a href="#features">Công Nghệ</a></li>
+        <li><a href="#stats">Hiệu Suất</a></li>
+        <li><a href="#founder">Người Sáng Lập</a></li>
       </ul>
 
       <div class="nav-actions">
         <a href="https://zalo.me/0385499179" target="_blank" class="btn-zalo-pill">
-          <span>💬 Tư Vấn Zalo</span>
+          <span>💬 Nhắn Tin Zalo</span>
         </a>
       </div>
     </nav>
   </div>
 
   <!-- Hero Section -->
-  <section class="hero container" id="about">
-    <div class="hero-grid">
-      <!-- Left Hero Column -->
-      <div class="hero-left">
-        <div class="hero-pill">
-          <span class="pulse-leaf">✨</span>
-          <span>HỆ SINH THÁI CÔNG NGHỆ & TRUYỀN THÔNG SỐ 2MH GROUP</span>
+  <section class="container hero" id="ecosystem">
+    <div class="hero-badge-pill">
+      <span class="badge-dot"></span>
+      <span>HỆ THỐNG TỰ ĐỘNG HÓA & WEB BÁN HÀNG 2025</span>
+    </div>
+
+    <h1 class="hero-headline">
+      Sức mạnh công nghệ cho <br>
+      <span class="liquid-chromatic-text">thế hệ kinh doanh tiếp theo.</span>
+    </h1>
+
+    <p class="hero-subheadline">
+      <strong>2MH GROUP</strong> kiến tạo hạ tầng phần mềm tự động hóa TMĐT, Studio Render Video AI đa nền tảng và hệ thống website bán hàng VietQR tối ưu từng giây chuyển đổi.
+    </p>
+
+    <div class="hero-actions">
+      <a href="https://zalo.me/0385499179" target="_blank" class="btn-liquid-primary">
+        <span>Khởi Chạy Cùng 2MH</span>
+        <span>➔</span>
+      </a>
+      <a href="#features" class="btn-liquid-secondary">
+        <span>Khám Phá Giải Pháp</span>
+      </a>
+    </div>
+
+    <!-- Product Stage (Stripe Tabs + Live Mockup Canvas) -->
+    <div class="liquid-stage">
+      <div class="stage-chrome">
+        <div class="chrome-dots">
+          <div class="chrome-dot dot-red"></div>
+          <div class="chrome-dot dot-yellow"></div>
+          <div class="chrome-dot dot-green"></div>
         </div>
 
-        <h1 class="hero-title">
-          Giải Pháp Phần Mềm & <br>
-          <span class="highlight-blue">Thiết Kế Website Bán Hàng Chuyên Nghiệp</span>
-        </h1>
+        <div class="liquid-stage-tabs">
+          <button class="liquid-tab-btn active" onclick="switchStage('shopee', this)">
+            <span>🛒 Shopee Suite</span>
+          </button>
+          <button class="liquid-tab-btn" onclick="switchStage('videoai', this)">
+            <span>🎬 VideoAI Studio</span>
+          </button>
+          <button class="liquid-tab-btn" onclick="switchStage('webvietqr', this)">
+            <span>⚡ Web Bán Hàng</span>
+          </button>
+          <button class="liquid-tab-btn" onclick="switchStage('erp', this)">
+            <span>💼 ERP May Đo</span>
+          </button>
+        </div>
 
-        <p class="hero-desc">
-          <strong>2MH GROUP</strong> phát triển hệ sinh thái phần mềm tự động hóa TMĐT, hệ thống quản trị ERP may đo và thiết kế website bán hàng chuẩn SEO tối ưu tỷ lệ chuyển đổi.
+        <div class="stage-status-live">
+          <span style="color:#10b981;">●</span> LIVE RUNTIME
+        </div>
+      </div>
+
+      <!-- Tab 1: Shopee Suite -->
+      <div class="stage-pane active" id="pane-shopee">
+        <div class="pane-info">
+          <h3>Tự Động Hóa Shopee Đa Kênh Toàn Diện</h3>
+          <p>
+            Vận hành hàng trăm gian hàng cùng lúc: Tự động tải video, reup video chuẩn thuật toán, đồng bộ kho hàng và cào dữ liệu thị trường theo thời gian thực.
+          </p>
+          <ul class="pane-feature-list">
+            <li><span class="liquid-check-icon">✓</span> Tự động tải & xử lý siêu tốc hàng ngàn video Shopee</li>
+            <li><span class="liquid-check-icon">✓</span> Tránh quét bản quyền với công nghệ render biến đổi khung hình</li>
+            <li><span class="liquid-check-icon">✓</span> Đồng bộ cookie, session an toàn và tự động gia hạn</li>
+          </ul>
+          <a href="https://zalo.me/0385499179" target="_blank" class="btn-pane-action">
+            <span>Tư Vấn Tool Shopee Qua Zalo</span>
+            <span>➔</span>
+          </a>
+        </div>
+        <div class="liquid-mock-card">
+          <div class="mock-header">
+            <div class="mock-title">
+              <span>⚡</span> 2MH Shopee Automation Daemon
+            </div>
+            <div class="mock-tag">v6.4 ACTIVE</div>
+          </div>
+          <div class="mock-stream-row">
+            <span>Quét 1.420 Shop Hot Sellers</span>
+            <span class="mock-pill-success">Đã hoàn tất (0.8s)</span>
+          </div>
+          <div class="mock-stream-row">
+            <span>Tải & Lọc Watermark 350 Video</span>
+            <span class="mock-pill-success">100% Hoàn Thành</span>
+          </div>
+          <div class="mock-stream-row">
+            <span>Lập lịch Reup 48 Tài Khoản</span>
+            <span style="color: var(--brand-sky); font-family: var(--font-mono); font-size: 11px; font-weight: 700;">ĐANG ĐẨY HÀNG LOẠT...</span>
+          </div>
+          <div class="mock-progress-bar">
+            <div class="mock-progress-fill"></div>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-top: 8px; display: flex; justify-content: space-between;">
+            <span>Tiến trình tự động hóa</span>
+            <span style="color: var(--brand-sky); font-weight: 700;">78% / 100%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: VideoAI Studio -->
+      <div class="stage-pane" id="pane-videoai">
+        <div class="pane-info">
+          <h3>Studio Render Video Hàng Loạt Tích Hợp AI</h3>
+          <p>
+            Biến nguồn nguyên liệu thô thành hàng ngàn video ngắn Shorts, TikTok, Reels chỉ trong một cú click chuột với hiệu ứng âm thanh và phụ đề động.
+          </p>
+          <ul class="pane-feature-list">
+            <li><span class="liquid-check-icon">✓</span> Ghép layer, intro, outro, nhạc nền tự động không trùng lặp</li>
+            <li><span class="liquid-check-icon">✓</span> Tăng tốc độ xuất video bằng công nghệ tăng tốc phần cứng GPU</li>
+            <li><span class="liquid-check-icon">✓</span> Tối ưu tỷ lệ giữ chân người xem theo chuẩn thuật toán MXH</li>
+          </ul>
+          <a href="https://zalo.me/0385499179" target="_blank" class="btn-pane-action">
+            <span>Trải Nghiệm VideoAI Studio</span>
+            <span>➔</span>
+          </a>
+        </div>
+        <div class="liquid-mock-card">
+          <div class="mock-header">
+            <div class="mock-title">
+              <span>🎬</span> 2MH VideoAI Engine v2.0
+            </div>
+            <div class="mock-tag">RENDER CLUSTER</div>
+          </div>
+          <div class="mock-stream-row">
+            <span>Dynamic Voiceover Generation</span>
+            <span class="mock-pill-success">CUDA Accelerated</span>
+          </div>
+          <div class="mock-stream-row">
+            <span>Timeline Auto Beat-Sync</span>
+            <span class="mock-pill-success">Synced (60 FPS)</span>
+          </div>
+          <div class="mock-stream-row">
+            <span>Batch Render 500 Shorts / Giờ</span>
+            <span style="color: var(--brand-violet); font-family: var(--font-mono); font-size: 11px; font-weight: 700;">READY FOR EXPORT</span>
+          </div>
+          <div class="mock-progress-bar">
+            <div class="mock-progress-fill" style="background: linear-gradient(90deg, #6366f1, #0284c7); width: 92%;"></div>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-top: 8px; display: flex; justify-content: space-between;">
+            <span>Tốc độ render: 6.4x Realtime</span>
+            <span style="color: var(--brand-violet); font-weight: 700;">92% Đã Xong</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Web VietQR -->
+      <div class="stage-pane" id="pane-webvietqr">
+        <div class="pane-info">
+          <h3>Website Bán Hàng & Landing Page Tối Ưu Chuyển Đổi</h3>
+          <p>
+            Tốc độ tải dưới 0.5 giây, giao diện thiết kế riêng độc quyền, tích hợp thanh toán quét mã QR VietQR / SePay tự động xác nhận hóa đơn trong 0.2 giây.
+          </p>
+          <ul class="pane-feature-list">
+            <li><span class="liquid-check-icon">✓</span> Không phụ thuộc nền tảng bên thứ ba, bảo mật mã nguồn riêng</li>
+            <li><span class="liquid-check-icon">✓</span> Tự động gửi thông báo đơn hàng và hóa đơn về Telegram / Zalo</li>
+            <li><span class="liquid-check-icon">✓</span> Chuẩn SEO Google 100 điểm Lighthouse, giao diện Mobile mượt mà</li>
+          </ul>
+          <a href="https://zalo.me/0385499179" target="_blank" class="btn-pane-action">
+            <span>Tư Vấn Thiết Kế Web Bán Hàng</span>
+            <span>➔</span>
+          </a>
+        </div>
+        <div class="liquid-mock-card">
+          <div class="mock-header">
+            <div class="mock-title">
+              <span>💳</span> VietQR Gateway Auto-Confirm
+            </div>
+            <div class="mock-tag">0.2s LATENCY</div>
+          </div>
+          <div class="mock-stream-row">
+            <span>Khách quét VietQR: #ORD-9842</span>
+            <span class="mock-pill-success">Tự động khớp lệnh</span>
+          </div>
+          <div class="mock-stream-row">
+            <span>Tốc độ tải trang First Byte</span>
+            <span class="mock-pill-success">0.34 Giây (A+)</span>
+          </div>
+          <div class="mock-stream-row">
+            <span>Bắn thông báo đơn về Telegram</span>
+            <span style="color: #059669; font-family: var(--font-mono); font-size: 11px; font-weight: 700;">DELIVERED</span>
+          </div>
+          <div class="mock-progress-bar">
+            <div class="mock-progress-fill" style="background: linear-gradient(90deg, #10b981, #06b6d4); width: 100%;"></div>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-top: 8px; display: flex; justify-content: space-between;">
+            <span>Tỷ lệ thanh toán thành công</span>
+            <span style="color: #059669; font-weight: 700;">99.8% Chốt Đơn</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 4: ERP May Đo -->
+      <div class="stage-pane" id="pane-erp">
+        <div class="pane-info">
+          <h3>Phần Mềm Quản Trị ERP & CRM May Đo Theo Yêu Cầu</h3>
+          <p>
+            Giải quyết triệt để các bài toán hóc búa nhất của doanh nghiệp: Quản lý hàng triệu dòng dữ liệu khách hàng, phân quyền chi tiết, đối soát dòng tiền đa tài khoản.
+          </p>
+          <ul class="pane-feature-list">
+            <li><span class="liquid-check-icon">✓</span> Lập trình theo quy trình riêng biệt, không bị gò bó như phần mềm đóng gói</li>
+            <li><span class="liquid-check-icon">✓</span> Báo cáo trực quan theo thời gian thực (Real-time Financial Analytics)</li>
+            <li><span class="liquid-check-icon">✓</span> Kiến trúc chịu tải cao, sẵn sàng mở rộng khi quy mô tăng gấp 10 lần</li>
+          </ul>
+          <a href="https://zalo.me/0385499179" target="_blank" class="btn-pane-action">
+            <span>Đặt Hàng Phần Mềm May Đo</span>
+            <span>➔</span>
+          </a>
+        </div>
+        <div class="liquid-mock-card">
+          <div class="mock-header">
+            <div class="mock-title">
+              <span>💼</span> 2MH Enterprise Engine
+            </div>
+            <div class="mock-tag">HIGH SCALE</div>
+          </div>
+          <div class="mock-stream-row">
+            <span>Đối soát 12 Ngân Hàng Tự Động</span>
+            <span class="mock-pill-success">Chính xác 100%</span>
+          </div>
+          <div class="mock-stream-row">
+            <span>Bảo mật dữ liệu nội bộ (AES-256)</span>
+            <span class="mock-pill-success">Mã hóa đa tầng</span>
+          </div>
+          <div class="mock-stream-row">
+            <span>Phân quyền chi nhánh & nhân sự</span>
+            <span style="color: #d97706; font-family: var(--font-mono); font-size: 11px; font-weight: 700;">GRANULAR RBAC</span>
+          </div>
+          <div class="mock-progress-bar">
+            <div class="mock-progress-fill" style="background: linear-gradient(90deg, #f59e0b, #ef4444); width: 85%;"></div>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-top: 8px; display: flex; justify-content: space-between;">
+            <span>Chỉ số toàn vẹn dữ liệu</span>
+            <span style="color: #d97706; font-weight: 700;">99.99% Uptime</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Grid Showcase -->
+  <section class="container bento-section" id="features">
+    <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <span class="section-eyebrow">HẠ TẦNG & CÔNG NGHỆ 2025</span>
+      <h2 class="section-headline">Được xây dựng cho tốc độ, tự động hóa và độ ổn định vượt trội.</h2>
+      <p class="section-desc" style="margin-left: auto; margin-right: auto;">
+        Mỗi giải pháp tại 2MH GROUP đều được tối ưu hóa ở tầng mã nguồn để mang lại hiệu năng cao nhất cho doanh nghiệp.
+      </p>
+    </div>
+
+    <div class="bento-grid">
+      <!-- Bento Box 1: Large Span 8 -->
+      <div class="bento-card col-span-8">
+        <div class="card-icon-badge">🚀</div>
+        <h4>Kiến Trúc Tự Động Hóa Không Chạm (Zero-Touch)</h4>
+        <p>
+          Hệ thống robot tự động vận hành các tác vụ lặp đi lặp lại: Thu thập thông tin sản phẩm thị trường, phân tích chỉ số đối thủ và đẩy hàng loạt nội dung video đa nền tảng không cần can thiệp thủ công.
         </p>
-
-        <div class="hero-btn-group">
-          <a href="https://zalo.me/0385499179" target="_blank" class="btn-hero-solid">
-            <span>Nhắn Zalo Tư Vấn</span>
-            <span>➔</span>
-          </a>
-          <a href="#services" class="btn-hero-outline">
-            <span>Xem Các Dịch Vụ</span>
-          </a>
-        </div>
-
-        <div class="hero-trust-badges">
-          <div class="trust-item">
-            <span class="icon">⚡</span>
-            <span>Tốc độ web &lt; 0.5s</span>
-          </div>
-          <div class="trust-item">
-            <span class="icon">🛡️</span>
-            <span>Vận hành ổn định 24/7</span>
-          </div>
-          <div class="trust-item">
-            <span class="icon">💬</span>
-            <span>Hỗ trợ kỹ thuật qua Zalo</span>
-          </div>
+        <div class="bento-code-box">
+          <div class="code-comment">// Khởi chạy tác vụ đồng bộ hệ thống 2MH GROUP</div>
+          <div><span class="code-keyword">const</span> engine = <span class="code-keyword">await</span> TwoMH.<span class="code-keyword">init</span>({ mode: <span class="code-string">"full-automation"</span> });</div>
+          <div><span class="code-keyword">await</span> engine.<span class="code-keyword">syncChannels</span>({ platforms: [<span class="code-string">"Shopee"</span>, <span class="code-string">"TikTok"</span>], concurrency: <span class="code-number">64</span> });</div>
+          <div class="code-comment">// Kết quả: 1.400 video & đơn hàng được xử lý tự động trong 12 giây</div>
         </div>
       </div>
 
-      <!-- Right Hero Visual Photo Frame -->
-      <div class="hero-right">
-        <div class="hero-image-frame">
-          <div class="hero-image-inner">
-            <img src="hero-work.jpg" alt="Văn Phòng Công Nghệ 2MH GROUP">
-          </div>
+      <!-- Bento Box 2: Span 4 Highlight -->
+      <div class="bento-card col-span-4" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div class="card-icon-badge">⚡</div>
+          <h4>Tốc Độ & Bảo Mật</h4>
+          <p>
+            Mọi website bán hàng đều được cấu hình với CDN toàn cầu, nén ảnh thế hệ mới WebP/AVIF và chống tấn công DDoS.
+          </p>
         </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 16px;">
+          <div class="stat-hero-number">&lt; 0.5s</div>
+          <div class="stat-hero-label">Thời gian tải trang trung bình</div>
+        </div>
+      </div>
 
-        <!-- Hero Stats Group (floating on desktop, 2-column grid on mobile/tablet) -->
-        <div class="hero-stats-group">
-          <div class="floating-card float-top">
-            <div class="float-icon">⚡</div>
-            <div class="float-info">
-              <h4>Xử Lý Tự Động</h4>
-              <p>Hơn 1.000.000 tác vụ / tuần</p>
-            </div>
-          </div>
+      <!-- Bento Box 3: Span 4 Media -->
+      <div class="bento-card col-span-4">
+        <div class="card-icon-badge">🎬</div>
+        <h4>2MH Media Network</h4>
+        <p>
+          Mạng lưới liên kết KOC/KOL cùng các đối tác MIK MCN & Vinc Media giúp mở rộng độ phủ thương hiệu và thúc đẩy hàng ngàn lượt mua hàng tự nhiên.
+        </p>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 12px; border-radius: 12px; font-size: 13px;">
+          <div style="color: var(--brand-sky); font-weight: 800; margin-bottom: 4px;">✓ Affiliate MCN Shopee & TikTok</div>
+          <div style="color: var(--text-sub);">Xây dựng luồng video ngắn chuyển đổi cao</div>
+        </div>
+      </div>
 
-          <div class="floating-card float-bottom">
-            <div class="float-icon">🛡️</div>
-            <div class="float-info">
-              <h4>Bảo Mật Dữ Liệu</h4>
-              <p>Sao lưu & vận hành ổn định 24/7</p>
-            </div>
-          </div>
+      <!-- Bento Box 4: Span 4 Custom Tailored -->
+      <div class="bento-card col-span-4">
+        <div class="card-icon-badge">🛠️</div>
+        <h4>Lập Trình Theo Yêu Cầu</h4>
+        <p>
+          Không bán các mẫu dựng sẵn đại trà. Mỗi dự án của khách hàng đều được phân tích nghiệp vụ kỹ lưỡng và may đo đúng chuẩn quy trình nội bộ.
+        </p>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 12px; border-radius: 12px; font-size: 13px;">
+          <div style="color: var(--brand-violet); font-weight: 800; margin-bottom: 4px;">✓ Sở Hữu Mã Nguồn Độc Quyền</div>
+          <div style="color: var(--text-sub);">Dễ dàng nâng cấp tính năng không giới hạn</div>
+        </div>
+      </div>
+
+      <!-- Bento Box 5: Span 4 Support -->
+      <div class="bento-card col-span-4">
+        <div class="card-icon-badge">🛡️</div>
+        <h4>Đồng Hành Kỹ Thuật 24/7</h4>
+        <p>
+          Đội ngũ kỹ thuật túc trực trực tiếp qua Zalo, xử lý nhanh các tình huống phát sinh và bảo đảm hệ thống vận hành liên tục không gián đoạn.
+        </p>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 12px; border-radius: 12px; font-size: 13px;">
+          <div style="color: #059669; font-weight: 800; margin-bottom: 4px;">✓ Hỗ Trợ Kênh Riêng 1:1</div>
+          <div style="color: var(--text-sub);">Thời gian phản hồi tính bằng phút</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4 Overlapping Floating Cards (Hero Bottom - Exact Reference Element) -->
-  <section class="container feature-cards-section">
-    <div class="feature-cards-grid">
-      <!-- Card 1 -->
-      <div class="feat-card">
-        <div>
-          <div class="feat-icon-box">💻</div>
-          <h3 class="feat-card-title">Phần Mềm Tự Động Hóa</h3>
-          <p class="feat-card-desc">
-            Tool upload video Shopee, Render Studio tự động, cào dữ liệu thị trường TMĐT và giải pháp đồng bộ đơn hàng đa kênh.
-          </p>
-        </div>
-        <a href="#services" class="feat-link">Tìm hiểu thêm ➔</a>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="feat-card">
-        <div>
-          <div class="feat-icon-box">🛒</div>
-          <h3 class="feat-card-title">Website Bán Hàng & Landing Page</h3>
-          <p class="feat-card-desc">
-            Thiết kế chuẩn SEO, giao diện tối ưu trên điện thoại, tích hợp sẵn thanh toán quét mã QR VietQR, SePay và tự động chốt đơn.
-          </p>
-        </div>
-        <a href="#ecommerce-web" class="feat-link">Xem chi tiết ➔</a>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="feat-card">
-        <div>
-          <div class="feat-icon-box">📊</div>
-          <h3 class="feat-card-title">Hệ Thống ERP & Quản Trị CRM</h3>
-          <p class="feat-card-desc">
-            Quản lý khách hàng, phân quyền nhân sự, đối soát dòng tiền và báo cáo số liệu kinh doanh realtime cho doanh nghiệp.
-          </p>
-        </div>
-        <a href="#services" class="feat-link">Xem giải pháp ➔</a>
-      </div>
-
-      <!-- Card 4 (Solid Blue Accent Card - Like red card in reference image) -->
-      <div class="feat-card card-accent-solid">
-        <div>
-          <div style="font-size: 26px; margin-bottom: 12px;">💬</div>
-          <h3 class="feat-card-title">Liên Hệ Với 2MH GROUP</h3>
-          <p class="feat-card-desc">
-            Nhắn tin trực tiếp qua Zalo để được tư vấn phương án phần mềm hoặc website phù hợp nhất cho mô hình kinh doanh của bạn.
-          </p>
-        </div>
-        <a href="https://zalo.me/0385499179" target="_blank" class="btn-card-white">
-          <span>Nhắn Zalo Ngay</span>
-          <span>➔</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Partner Logos Marquee -->
-  <section class="partners-section">
+  <!-- Metrics Strip -->
+  <section class="metrics-strip" id="stats">
     <div class="container">
-      <div class="partners-label">Đối tác đồng hành & Nền tảng tích hợp chiến lược</div>
-      <div class="marquee-container">
-        <div class="marquee-track">
-          <div class="partner-brand-item"><div class="partner-logo-badge">SP</div> Shopee E-Commerce</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">TT</div> TikTok Shop Partner</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">VM</div> Vinc Media</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">MK</div> MIK MCN Creator</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">TS</div> Tun Store Chain</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">AWS</div> Amazon Web Services</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">FB</div> Meta Business</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">QR</div> VietQR Open Banking</div>
-          
-          <!-- Duplicate for seamless scroll -->
-          <div class="partner-brand-item"><div class="partner-logo-badge">SP</div> Shopee E-Commerce</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">TT</div> TikTok Shop Partner</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">VM</div> Vinc Media</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">MK</div> MIK MCN Creator</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">TS</div> Tun Store Chain</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">AWS</div> Amazon Web Services</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">FB</div> Meta Business</div>
-          <div class="partner-brand-item"><div class="partner-logo-badge">QR</div> VietQR Open Banking</div>
+      <div class="metrics-grid">
+        <div>
+          <div class="metric-item-val">100+</div>
+          <div class="metric-item-name">Nhà Bán Hàng & Doanh Nghiệp</div>
+          <div class="metric-item-sub">Ứng dụng giải pháp tự động của 2MH</div>
+        </div>
+        <div>
+          <div class="metric-item-val">1.2M+</div>
+          <div class="metric-item-name">Video Render Tự Động</div>
+          <div class="metric-item-sub">Được xử lý qua hệ thống VideoAI Studio</div>
+        </div>
+        <div>
+          <div class="metric-item-val">99.98%</div>
+          <div class="metric-item-name">Thời Gian Hoạt Động Ổn Định</div>
+          <div class="metric-item-sub">Hạ tầng đám mây phân tán tốc độ cao</div>
+        </div>
+        <div>
+          <div class="metric-item-val">0.2s</div>
+          <div class="metric-item-name">Khớp Lệnh VietQR</div>
+          <div class="metric-item-sub">Xác nhận thanh toán hoàn toàn tự động</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About / Story Section: "The 2MH Co. Build Future" (Like Reference Image) -->
-  <section class="about-future container" id="story">
-    <div class="about-grid">
-      <!-- Left Column: Story & Philosophy -->
-      <div class="about-left">
-        <span class="section-tag">VỀ 2MH GROUP</span>
-        <h2 class="section-title">Đồng Hành Xây Dựng Hệ Thống Thực Chiến</h2>
-
-        <!-- Handwritten Quote -->
-        <div class="quote-block">
-          <p class="quote-text">
-            "Mục tiêu của 2MH GROUP là tạo ra những công cụ và hệ thống thật sự hiệu quả, giúp doanh nghiệp tự động hóa công việc, tiết kiệm chi phí và tăng trưởng doanh thu rõ rệt."
-          </p>
-          <div class="quote-author">Vũ Quang Minh</div>
-        </div>
-
-        <!-- Quick Consult Input Field (Like Reference Image) -->
-        <div class="quick-consult-box">
-          <div class="quick-consult-title">
-            <span>💬</span>
-            <span>Cần tư vấn giải pháp? Nhập số Zalo để được hỗ trợ nhanh:</span>
-          </div>
-          <form class="quick-consult-form" onsubmit="event.preventDefault(); window.open('https://zalo.me/0385499179', '_blank');">
-            <input type="text" class="quick-input" placeholder="Nhập số điện thoại / Zalo của bạn..." required>
-            <button type="submit" class="quick-submit-btn">Nhắn Zalo Ngay</button>
-          </form>
-        </div>
-
-        <!-- 2 Pillars -->
-        <div class="pillars-two">
-          <div class="pillar-subitem">
-            <h4><span>🎯</span> Sứ Mệnh Thực Tế</h4>
-            <p>Xây dựng giải pháp phần mềm và website bám sát nhu cầu kinh doanh thực tế, dễ dùng và mang lại hiệu quả trực tiếp.</p>
-          </div>
-          <div class="pillar-subitem">
-            <h4><span>⚡</span> Tiêu Chí Vận Hành</h4>
-            <p>Hệ thống ổn định, bàn giao đúng hẹn, hỗ trợ kỹ thuật tận tình và luôn đồng hành lâu dài cùng khách hàng.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Column: Photo Collage with Floating Stat -->
-      <div class="about-right">
-        <div class="about-collage">
-          <div class="collage-img-1">
-            <img src="team-collab.jpg" alt="Đội Ngũ 2MH GROUP Làm Việc">
-          </div>
-          <div class="collage-img-2">
-            <img src="ui-design.jpg" alt="Thiết Kế Giao Diện Sản Phẩm">
-          </div>
-        </div>
-
-        <!-- Reference Style Stat Badge: 2025 -->
-        <div class="stat-badge-box">
-          <div class="number">2025</div>
-          <div class="label">Năm Thành Lập • Vững Bền</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Core Services Section -->
-  <section class="services-section" id="services">
-    <div class="container">
-      <div class="section-header-center">
-        <span class="section-tag">HỆ SINH THÁI DỊCH VỤ</span>
-        <h2 class="section-title">Giải Pháp Toàn Diện Cho Doanh Nghiệp Bạn</h2>
-        <p class="section-subtext">Cung cấp đầy đủ từ phần mềm quản lý, thiết kế website bán hàng đến các giải pháp truyền thông kéo traffic thực tế.</p>
-      </div>
-
-      <div class="services-grid">
-        <!-- Service 1: Web Bán Hàng & Landing -->
-        <div class="service-box" id="ecommerce-web">
-          <div>
-            <div class="service-header-icon">🛒</div>
-            <h3 class="service-box-title">Thiết Kế Web Bán Hàng & Landing Page</h3>
-            <p class="service-box-desc">
-              Xây dựng website bán hàng chuẩn SEO, tải trang nhanh dưới 0.5s, giao diện tối ưu tỷ lệ chốt đơn và đồng bộ quản lý kho hàng tự động.
-            </p>
-            <ul class="service-list">
-              <li><span class="check">✓</span> Giao diện tối ưu trên điện thoại, trải nghiệm mua sắm tiện lợi.</li>
-              <li><span class="check">✓</span> Tích hợp thanh toán quét mã VietQR, SePay, Momo, VNPAY.</li>
-              <li><span class="check">✓</span> Bố cục Landing Page tập trung vào nội dung chốt đơn.</li>
-              <li><span class="check">✓</span> Đạt điểm xanh Google PageSpeed Insights, chuẩn SEO tìm kiếm.</li>
-            </ul>
-          </div>
-          <a href="https://zalo.me/0385499179" target="_blank" class="btn-service-action">
-            <span>Trao đổi qua Zalo</span>
-            <span>➔</span>
-          </a>
-        </div>
-
-        <!-- Service 2: Software Development & ERP -->
-        <div class="service-box">
-          <div>
-            <div class="service-header-icon">💻</div>
-            <h3 class="service-box-title">Phần Mềm Doanh Nghiệp & Quản Trị ERP/CRM</h3>
-            <p class="service-box-desc">
-              Lập trình hệ thống quản trị may đo theo đúng bài toán vận hành của doanh nghiệp: quản lý khách hàng, tài chính, đối soát và kho bãi.
-            </p>
-            <ul class="service-list">
-              <li><span class="check">✓</span> Quản lý thông tin Leads, chăm sóc khách hàng tự động.</li>
-              <li><span class="check">✓</span> Tự động đối soát giao dịch ngân hàng theo thời gian thực.</li>
-              <li><span class="check">✓</span> Hệ thống chịu tải lớn, phân quyền tài khoản rõ ràng.</li>
-              <li><span class="check">✓</span> Tùy biến tính năng linh hoạt theo từng ngành nghề.</li>
-            </ul>
-          </div>
-          <a href="https://zalo.me/0385499179" target="_blank" class="btn-service-action">
-            <span>Trao đổi qua Zalo</span>
-            <span>➔</span>
-          </a>
-        </div>
-
-        <!-- Service 3: Media & MCN Affiliate -->
-        <div class="service-box" id="media">
-          <div>
-            <div class="service-header-icon">🎬</div>
-            <h3 class="service-box-title">2MH Media & MCN Affiliate Network</h3>
-            <p class="service-box-desc">
-              Kéo lượng truy cập tự nhiên, xây dựng độ nhận diện thương hiệu và chuyển hóa thành doanh thu bán lẻ trên Shopee và TikTok Shop.
-            </p>
-            <ul class="service-list">
-              <li><span class="check">✓</span> Lên kịch bản & sản xuất video ngắn TikTok, Shorts, Reels.</li>
-              <li><span class="check">✓</span> Xây dựng và vận hành kênh Affiliate Shopee, TikTok Shop.</li>
-              <li><span class="check">✓</span> Hợp tác KOC/KOL trong mạng lưới Vinc Media & MIK.</li>
-              <li><span class="check">✓</span> VideoAI Render Studio sản xuất nội dung video tự động.</li>
-            </ul>
-          </div>
-          <a href="https://zalo.me/0385499179" target="_blank" class="btn-service-action">
-            <span>Trao đổi qua Zalo</span>
-            <span>➔</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Metrics / Recognition Strip (Like Reference Image Row) -->
-  <section class="metrics-section">
-    <div class="container">
-      <div class="metrics-row">
-        <div class="metric-card-simple">
-          <div class="metric-big-num">100+</div>
-          <div class="metric-title">Doanh Nghiệp & Sellers</div>
-          <div class="metric-sub">Đã và đang sử dụng giải pháp của 2MH</div>
-        </div>
-        <div class="metric-card-simple">
-          <div class="metric-big-num">1.2M+</div>
-          <div class="metric-title">Video Render Tự Động</div>
-          <div class="metric-sub">Được xử lý qua hệ sinh thái VideoAI Studio</div>
-        </div>
-        <div class="metric-card-simple">
-          <div class="metric-big-num">&lt; 0.5s</div>
-          <div class="metric-title">Tốc Độ Tải Trang Web</div>
-          <div class="metric-sub">Hạ tầng máy chủ tối ưu hiệu năng cao</div>
-        </div>
-        <div class="metric-card-simple">
-          <div class="metric-big-num">24/7</div>
-          <div class="metric-title">Hệ Thống Ổn Định</div>
-          <div class="metric-sub">Bảo đảm vận hành liên tục không gián đoạn</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Founder Showcase -->
-  <section class="founder-wrap container" id="founder">
-    <div class="founder-card-serene">
-      <div class="founder-avatar-box">
+  <!-- Founder Statement -->
+  <section class="container founder-section" id="founder">
+    <div class="founder-liquid-card">
+      <div class="founder-avatar">
         QM
       </div>
       <div>
-        <p class="founder-quote-text">
-          "Chúng tôi tập trung vào kết quả thực tế của khách hàng: Phần mềm phải chạy ổn định, website phải dễ bán hàng và các giải pháp truyền thông phải mang lại doanh số thật."
+        <p class="founder-quote">
+          "Chúng tôi bắt đầu 2MH GROUP từ năm 2025 với một niềm tin kiên định: Công nghệ phải phục vụ trực tiếp cho hiệu quả kinh doanh. Phần mềm phải chạy ổn định, website phải dễ bán hàng và các giải pháp tự động hóa phải giải phóng sức lao động thật sự cho đối tác."
         </p>
-        <div class="founder-author-name">Vũ Quang Minh</div>
-        <div class="founder-author-role">Founder • 2MH GROUP</div>
+        <div class="founder-name">Vũ Quang Minh</div>
+        <div class="founder-role">Người Sáng Lập (Founder) • 2MH GROUP</div>
       </div>
     </div>
   </section>
 
   <!-- Conversion CTA Banner -->
-  <section class="cta-banner-section container">
-    <div class="cta-serene-box">
-      <h2 class="cta-title">Trao Đổi Trực Tiếp Cùng 2MH GROUP</h2>
-      <p class="cta-desc">
-        Bạn đang cần thiết kế web bán hàng, landing page chạy ads hay phần mềm tự động hóa? Hãy nhắn ngay qua Zalo để trao đổi chi tiết và nhận phương án phù hợp.
+  <section class="container cta-slab-section">
+    <div class="cta-slab">
+      <h2 class="cta-slab-title">Sẵn Sàng Nâng Tầm Doanh Nghiệp Của Bạn?</h2>
+      <p class="cta-slab-desc">
+        Trao đổi trực tiếp cùng đội ngũ 2MH GROUP qua Zalo để nhận tư vấn phương án kiến trúc website bán hàng và phần mềm tự động hóa phù hợp nhất.
       </p>
-      <div class="cta-btn-row">
-        <a href="https://zalo.me/0385499179" target="_blank" class="btn-cta-white">
-          <span>💬 Nhắn Tin Qua Zalo</span>
-        </a>
-      </div>
+      <a href="https://zalo.me/0385499179" target="_blank" class="btn-cta-liquid">
+        <span>💬 Nhắn Tin Tư Vấn Zalo</span>
+        <span>➔</span>
+      </a>
     </div>
   </section>
 
-  <!-- Footer (4-Column Corporate Clean) -->
+  <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="footer-top-grid">
-        <!-- Col 1: About 2MH -->
+      <div class="footer-grid">
+        <!-- Col 1 -->
         <div>
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
-            <img src="logo-2mh.png" alt="2MH GROUP" style="height: 38px; width: auto; object-fit: contain;">
-            <span style="font-family: var(--font-display); font-size: 18px; font-weight: 800; color: var(--primary);">2MH GROUP</span>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <img src="logo-2mh.png" alt="2MH GROUP" style="height: 36px; width: auto;">
+            <span style="font-size: 18px; font-weight: 900; color: var(--brand-deep);">2MH GROUP</span>
           </div>
-          <p style="font-size: 13.5px; line-height: 1.6; color: var(--text-body); margin-bottom: 18px;">
-            Hệ sinh thái công nghệ, phần mềm tự động hóa & truyền thông số. Đồng hành cùng nhà bán hàng và doanh nghiệp tăng trưởng bền vững.
+          <p class="footer-brand-desc">
+            Tổ hợp công nghệ & truyền thông số. Phát triển hệ sinh thái phần mềm tự động hóa TMĐT và website bán hàng chuẩn tương lai.
           </p>
-          <div style="font-size: 13px; color: var(--text-muted);">
-            Founder: <strong>Vũ Quang Minh</strong>
+          <div style="margin-top: 14px; font-size: 12.5px; color: var(--text-muted);">
+            Người sáng lập: <strong style="color: var(--text-main);">Vũ Quang Minh</strong> • Thành lập từ <strong style="color: var(--text-main);">2025</strong>
           </div>
         </div>
 
-        <!-- Col 2: Dịch Vụ Cốt Lõi -->
+        <!-- Col 2 -->
         <div class="footer-col">
-          <h4>Dịch Vụ Cốt Lõi</h4>
+          <h5>Phần Mềm & Web</h5>
           <ul>
-            <li><a href="#ecommerce-web">Thiết Kế Web Bán Hàng</a></li>
-            <li><a href="#ecommerce-web">Landing Page Chuyển Đổi</a></li>
-            <li><a href="#services">Hệ Thống ERP & CRM</a></li>
-            <li><a href="#services">Tool Tự Động Hóa TMĐT</a></li>
-            <li><a href="#services">Cào Dữ Liệu Thị Trường</a></li>
+            <li><a href="#ecosystem">Tool Tự Động Hóa Shopee</a></li>
+            <li><a href="#ecosystem">Studio VideoAI Render</a></li>
+            <li><a href="#ecosystem">Web Bán Hàng VietQR</a></li>
+            <li><a href="#ecosystem">Landing Page Chuẩn SEO</a></li>
+            <li><a href="#ecosystem">Hệ Thống ERP & CRM</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Hệ Sinh Thái & Đối Tác -->
+        <!-- Col 3 -->
         <div class="footer-col">
-          <h4>Hệ Sinh Thái</h4>
+          <h5>Hệ Sinh Thái</h5>
           <ul>
-            <li><a href="#media">2MH Media Network</a></li>
-            <li><a href="#media">Affiliate TMĐT Shopee/TikTok</a></li>
-            <li><a href="#story">Đối Tác MIK MCN & Vinc Media</a></li>
-            <li><a href="#story">VideoAI Render Studio</a></li>
-            <li><a href="#founder">Người Sáng Lập</a></li>
+            <li><a href="#features">2MH Media Network</a></li>
+            <li><a href="#features">Mạng Lưới Affiliate KOC</a></li>
+            <li><a href="#features">Đối Tác MIK MCN & Vinc</a></li>
+            <li><a href="#stats">Hiệu Suất Vận Hành</a></li>
+            <li><a href="#founder">Về Chúng Tôi</a></li>
           </ul>
         </div>
 
-        <!-- Col 4: Liên Hệ & Hỗ Trợ -->
+        <!-- Col 4 -->
         <div class="footer-col">
-          <h4>Thông Tin Liên Hệ</h4>
-          <div class="footer-contact-item">
-            <span>📍</span>
-            <span>Hà Nội, Việt Nam</span>
-          </div>
-          <div class="footer-contact-item">
-            <span>💬</span>
-            <span>Zalo: <a href="https://zalo.me/0385499179" target="_blank" style="color: var(--primary); font-weight: 700;">Nhắn Tin Trực Tiếp</a></span>
-          </div>
-          <div class="footer-contact-item">
-            <span>🌐</span>
-            <span>Website: <strong style="color: var(--primary);">2mhgroup.io.vn</strong></span>
+          <h5>Kênh Trao Đổi</h5>
+          <div style="display: flex; flex-direction: column; gap: 10px; color: var(--text-sub); font-size: 13px;">
+            <div>📍 Trụ sở: Hà Nội, Việt Nam</div>
+            <div>💬 Hỗ trợ: <a href="https://zalo.me/0385499179" target="_blank" style="color: var(--brand-sky); font-weight: 800; text-decoration: none;">Nhắn Tin Trực Tiếp Zalo</a></div>
+            <div>🌐 Trang chủ: <strong style="color: var(--brand-deep);">2mhgroup.io.vn</strong></div>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
         <div>© 2025 - 2026 <strong>2MH GROUP</strong>. Tất cả quyền được bảo lưu.</div>
-        <div style="color: var(--text-light);">2MH GROUP Architecture</div>
+        <div>Tối ưu hiệu năng 60 FPS • Chuẩn trải nghiệm quốc tế</div>
       </div>
     </div>
   </footer>
 
-  <!-- Floating Zalo Widget (Modern Bubble, No Screen Cutoff) -->
-  <a href="https://zalo.me/0385499179" target="_blank" class="zalo-fab" aria-label="Tư vấn Zalo 2MH">
-    <span class="zalo-fab-ping"></span>
-    <span class="zalo-fab-icon">💬</span>
-    <span class="zalo-fab-label">Chat Zalo</span>
+  <!-- Floating Zalo Widget -->
+  <a href="https://zalo.me/0385499179" target="_blank" class="zalo-fab" aria-label="Nhắn Zalo 2MH GROUP">
+    <span style="font-size: 16px;">💬</span>
+    <span>Tư Vấn Zalo</span>
   </a>
+
+  <!-- Interactive Stage Script -->
+  <script>
+    function switchStage(paneId, btn) {
+      document.querySelectorAll('.liquid-tab-btn').forEach(function(b) {
+        b.classList.remove('active');
+      });
+      document.querySelectorAll('.stage-pane').forEach(function(p) {
+        p.classList.remove('active');
+      });
+
+      btn.classList.add('active');
+      var target = document.getElementById('pane-' + paneId);
+      if (target) {
+        target.classList.add('active');
+      }
+    }
+  </script>
 
 </body>
 </html>
