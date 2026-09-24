@@ -83,7 +83,7 @@
       color: var(--stripe-dark);
     }
 
-    /* Stripe Signature Diagonal Gradient Canvas */
+    /* Official Stripe WebGL Mesh Gradient Canvas */
     .stripe-mesh-wrapper {
       position: absolute;
       top: 0;
@@ -91,21 +91,20 @@
       right: 0;
       height: 720px;
       overflow: hidden;
-      transform: skewY(-6deg);
+      transform: skewY(-8deg);
       transform-origin: top left;
       z-index: 0;
       pointer-events: none;
+      border-bottom: 2px solid rgba(99, 91, 255, 0.2);
     }
-    .stripe-mesh-canvas {
-      position: absolute;
-      inset: -120px -60px;
-      background: 
-        radial-gradient(ellipse at 15% 20%, rgba(99, 91, 255, 0.35) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 25%, rgba(0, 212, 255, 0.35) 0%, transparent 45%),
-        radial-gradient(ellipse at 45% 75%, rgba(255, 112, 166, 0.25) 0%, transparent 55%),
-        radial-gradient(ellipse at 90% 80%, rgba(10, 37, 64, 0.22) 0%, transparent 50%),
-        linear-gradient(135deg, rgba(238, 242, 255, 0.98) 0%, rgba(224, 242, 254, 0.85) 50%, rgba(255, 255, 255, 0.95) 100%);
-      border-bottom: 2px solid rgba(99, 91, 255, 0.15);
+    #gradient-canvas {
+      width: 100%;
+      height: 100%;
+      --gradient-color-1: #004580;
+      --gradient-color-2: #00d4ff;
+      --gradient-color-3: #635bff;
+      --gradient-color-4: #ff70a6;
+      opacity: 0.95;
     }
 
     .container {
@@ -1682,9 +1681,9 @@
 </head>
 <body>
 
-  <!-- Stripe Signature Diagonal Gradient Canvas -->
+  <!-- Stripe Official WebGL Gradient Canvas -->
   <div class="stripe-mesh-wrapper">
-    <div class="stripe-mesh-canvas"></div>
+    <canvas id="gradient-canvas" data-transition-in></canvas>
   </div>
 
   <!-- Ambient Light Pattern -->
@@ -2156,5 +2155,19 @@
     <span class="zalo-fab-label">Chat Zalo</span>
   </a>
 
+  <!-- Official Stripe WebGL Gradient Engine -->
+  <script src="stripe-gradient.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      try {
+        if (window.Gradient) {
+          var gradient = new window.Gradient();
+          gradient.initGradient("#gradient-canvas");
+        }
+      } catch (err) {
+        console.warn("Stripe WebGL Init:", err);
+      }
+    });
+  </script>
 </body>
 </html>

@@ -17,6 +17,7 @@ FILES = [
     ("ui-design.jpg", "ui-design.jpg"),
     ("hero-2mh-pro.jpg", "hero-2mh-pro.jpg"),
     ("hero-curved-display.jpg", "hero-curved-display.jpg"),
+    ("stripe-gradient.js", "stripe-gradient.js"),
 ]
 
 def main():
