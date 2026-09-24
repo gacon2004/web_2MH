@@ -15,6 +15,8 @@ FILES = [
     ("hero-work.jpg", "hero-work.jpg"),
     ("team-collab.jpg", "team-collab.jpg"),
     ("ui-design.jpg", "ui-design.jpg"),
+    ("hero-2mh-pro.jpg", "hero-2mh-pro.jpg"),
+    ("hero-curved-display.jpg", "hero-curved-display.jpg"),
 ]
 
 def main():
